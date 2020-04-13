@@ -452,6 +452,37 @@
     padding: 160px 0 35px;
 }
 
+.post-content img{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    max-width: 944px;
+    overflow: hidden;
+    margin: 0 auto;
+
+
+    /*DESKTOP MEDIUM*/
+    @media screen and (max-width: $desktop_medium){
+        position: relative;
+    }
+
+    /*TABLET*/
+    @media screen and (max-width: $tablet){
+        max-width: 100%;
+    }
+
+    /*PHABLET*/
+    @media screen and (max-width: phablet){
+        margin: 0 auto;
+        width: calc(100vw - 40px);
+        height: 220px;
+
+        & > div {
+            height: 220px;
+        }
+    }
+}
+
 /**************************************ARTICLE NEXT**************************************/
 
 .footer-next-heading{
