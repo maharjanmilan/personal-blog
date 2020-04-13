@@ -28,10 +28,11 @@ We’ll first create a url to submit the contact form to. Let’s begin !
 2. Add the names of the input fields in your html form in the first row of the sheet. We’ll add `sn, name, email, subject` and `message` Field `sn` is auto generated serial number and this is not included in the html form.
 
 ![](https://cdn-images-1.medium.com/max/1600/1*891xJWYtiC2d6-16w7_NHg.png)
+<img src="https://cdn-images-1.medium.com/max/1600/1*891xJWYtiC2d6-16w7_NHg.png" alt="drawing" width="200"/>
 
 3\. Click `Tools` in menu bar, then click `Script Editor`
 
-![](https://cdn-images-1.medium.com/max/1600/1*cJtymE7LU3TaJzVVUb3wqQ.png)
+![](https://cdn-images-1.medium.com/max/1600/1*cJtymE7LU3TaJzVVUb3wqQ.png =250px)
 
 4\. This will open a script editor page. Copy the following code and paste it in the script editor. This script will listen for a `POST` request and add the submitted data as a new row in the google sheet.
 
