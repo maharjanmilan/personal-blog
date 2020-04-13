@@ -2,6 +2,7 @@ baseURL: "https://blog.milanmaharjan.com.np"
 languageCode: "en-us"
 title: "Milan Maharjan"
 pygmentsstyle: 'monokai'
+disqusShortname: milan-maharjan
 
 # Theme settings
 theme: novela
