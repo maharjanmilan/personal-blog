@@ -25,11 +25,12 @@ We’ll be using
 
 We’ll first create a url to submit the contact form to. Let’s begin !
 
-1. Open [Google Sheet](https://docs.google.com/spreadsheets) and create a new sheet.
-2. Add the names of the input fields in your html form in the first row of the sheet. We’ll add `sn, name, email, subject` and `message` Field `sn` is auto generated serial number and this is not included in the html form.
+1\. Open [Google Sheet](https://docs.google.com/spreadsheets) and create a new sheet.
+
+2\. Add the names of the input fields in your html form in the first row of the sheet. We’ll add `sn, name, email, subject` and `message` Field `sn` is auto generated serial number and this is not included in the html form.
 
 ![](https://cdn-images-1.medium.com/max/1600/1*891xJWYtiC2d6-16w7_NHg.png)
-<img src="https://cdn-images-1.medium.com/max/1600/1*891xJWYtiC2d6-16w7_NHg.png" alt="drawing" width="200"/>
+
 
 3\. Click `Tools` in menu bar, then click `Script Editor`
 
@@ -80,5 +81,3 @@ There are lot of other free static hosting services like [Netlify](https://www.n
 Btw you can also trigger the google sheet to send email with the form data. But that’s for another tutorial :)
 
 I hope this was helpful.
-
-![](https://miro.medium.com/max/1400/1*sSWNVHPWeBDZni5waZm9rQ.png)
