@@ -78,3 +78,5 @@ There are lot of other free static hosting services like [Netlify](https://www.n
 Btw you can also trigger the google sheet to send email with the form data. But that’s for another tutorial :)
 
 I hope this was helpful.
+
+![](https://miro.medium.com/max/1400/1*sSWNVHPWeBDZni5waZm9rQ.png)
