@@ -5,7 +5,8 @@ hero: "/images/1_sSWNVHPWeBDZni5waZm9rQ.png"
 excerpt: In this tutorial we will learn how to use google sheet as a backend to store
   the data submitted from a contact form
 timeToRead: 3
-authors: []
+authors:
+- Milan Maharjan
 
 ---
 If your website doesn’t change that often and all the features you need can be implemented with a static site, then there is no point building a bulky dynamic site. After all static sites are fast, simple, costs low, easier to scale and more secure.
