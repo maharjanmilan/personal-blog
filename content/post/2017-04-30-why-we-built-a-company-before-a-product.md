@@ -1,11 +1,12 @@
 ---
 title: Why we built a company before building a product and why it worked
-date: 2017-04-29T18:15:00+00:00
+date: 2017-04-29T18:15:00.000+00:00
 hero: "/images/hero-6.jpg"
 excerpt: Creating a new website for Hopper, one of the top 4 most downloaded travel
   apps in the U.S, along with Uber, Lyft.
 timeToRead: 3
-authors: []
+authors:
+- Milan Maharjan
 
 ---
 Hello, world! This is a demo post for `hugo-theme-novela`. Novela is built by the team at [Narative](https://narative.co), and built for everyone that loves the web.
