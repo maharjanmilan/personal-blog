@@ -1,155 +1,86 @@
 ---
-title: Why we built a company before building a product
+title: Build a custom Contact Form for your static website
 date: 2019-04-30
-hero: "/images/hero-6.jpg"
-excerpt: this is my excerpt
+hero: ''
+excerpt: In this tutorial we will learn how to use google sheet as a backend to store
+  the data submitted from a contact form
 timeToRead: 3
 authors: []
 
 ---
-Hello, world! This is a demo post for `hugo-theme-novela`. Novela is built by the team at [Narative](https://narative.co), and built for everyone that loves the web.
+***
 
-In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere.
-In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere.
-In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere.
+### Build a custom Contact Form for your static website
 
-In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere.
+![](https://cdn-images-1.medium.com/max/1600/1*sSWNVHPWeBDZni5waZm9rQ.png)
 
-But it takes more than good ideas to build and grow a business. It takes people to bring them into reality. Are those people collaborating and sharing their expertise, or are they in conflict and keeping it to themselves?
+If your website doesn’t change that often and all the features you need can be implemented with a static site, then there is no point building a bulky dynamic site. After all static sites are fast, simple, costs low, easier to scale and more secure.
 
-Do they have the resources necessary to execute on their ideas? Or are they constantly under pressure to pluck only the lowest-hanging fruit through bare minimum means, while putting their greatest ambitions on the back-burner?
+Being said that, sometimes we need some features that a static sites can’t offer. Getting data from a contact form is one of them. But there’s a very easy way to do that.
 
-These are the circumstances that suffocate creativity and destroy value in an organization. That’s why I knew that if I was going to start a company, our first product would have to be the company itself.
+In this tutorial we will learn how to use google sheet as a backend to store the data submitted from a contact form.
 
-```js
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import styled from "@emotion/styled";
+We’ll be using
 
-import * as SocialIcons from "../../icons/social";
-import mediaqueries from "@styles/media";
+* [GitHub Pages](https://pages.github.com) to host my static contact form (_free_)
+* Contact form template by [Colorlib](https://colorlib.com/download/160/) (_also free_)
+* [Google App Script](https://developers.google.com/apps-script/guides/sheets) to use [Google Sheet](https://docs.google.com/spreadsheets) as data storage (_also free_)
 
-const icons = {
-  dribbble: SocialIcons.DribbbleIcon,
-  linkedin: SocialIcons.LinkedinIcon,
-  twitter: SocialIcons.TwitterIcon,
-  facebook: SocialIcons.FacebookIcon,
-  instagram: SocialIcons.InstagramIcon,
-  github: SocialIcons.GithubIcon,
-};
+***
 
-const socialQuery = graphql`
-  {
-    allSite {
-      edges {
-        node {
-          siteMetadata {
-            social {
-              name
-              url
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+We’ll first create a url to submit the contact form to. Let’s begin !
 
-function SocialLinks({ fill = "#73737D" }: { fill: string }) {
-  const result = useStaticQuery(socialQuery);
-  const socialOptions = result.allSite.edges[0].node.siteMetadata.social;
+1. Open [Google Sheet](https://docs.google.com/spreadsheets) and create a new sheet.
+2. Add the names of the input fields in your html form in the first row of the sheet. We’ll add `sn, name, email, subject` and `message` Field `sn` is auto generated serial number and this is not included in the html form.
 
-  return (
-    <>
-      {socialOptions.map(option => {
-        const Icon = icons[option.name];
+![](https://cdn-images-1.medium.com/max/1600/1*891xJWYtiC2d6-16w7_NHg.png)
 
-        return (
-          <SocialIconContainer
-            key={option.name}
-            target="_blank"
-            rel="noopener"
-            data-a11y="false"
-            aria-label={`Link to ${option.name}`}
-            href={option.url}
-          >
-            <Icon fill={fill} />
-          </SocialIconContainer>
-        );
-      })}
-    </>
-  );
-}
-```
+3\. Click `Tools` in menu bar, then click `Script Editor`
 
-But it takes more than good ideas to build and grow a business. It takes people to bring them into reality. Are those people collaborating and sharing their expertise, or are they in conflict and keeping it to themselves?
+![](https://cdn-images-1.medium.com/max/1600/1*cJtymE7LU3TaJzVVUb3wqQ.png)
 
-# This is a primary heading
+4\. This will open a script editor page. Copy the following code and paste it in the script editor. This script will listen for a `POST` request and add the submitted data as a new row in the google sheet.
 
-Do they have the resources necessary to execute on their ideas? Or are they constantly under pressure to pluck only the lowest-hanging fruit through bare minimum means, while putting their greatest ambitions on the back-burner?
+Google Sheet script
 
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
+5\. Save the script. Then click `Run > Run function > setup` It will then ask for permission to access your google sheet. Just allow it. Then click `Publish > Deploy as web app` Set project version as `new`, execute the app as `me` and who has the access to app as `Anyone, even anonymous.` Then click deploy and it will display a web app url. Copy this url, we’ll need this later.
 
-But it takes more than good ideas to build and grow a business. It takes people to bring them into reality. Are those people collaborating and sharing their expertise, or are they in conflict and keeping it to themselves?
+![](https://cdn-images-1.medium.com/max/1600/1*I5IGS_gfa-zCB9WO4_o0hA.png)
 
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can _put_ **Markdown** into a blockquote.
+That is all we need to do in google sheet. Now let’s setup our frontend.
 
-These are the circumstances that suffocate creativity and destroy value in an organization. That’s why I knew that if I was going to start a company, our first product would have to be the company itself. These are the circumstances that suffocate creativity and destroy value in an organization. That’s why I knew that if I was going to start a company, our first product would have to be the company itself.
+***
 
-## This is a secondary heading
+6\. In your html form, let’s add few jQuery script to submit a POST request to the url we generated in step 5 above. Add following codes between script tag in your html. Replace the url in below code with your google script url and also replace the form class name.
 
-```jsx
-import React from "react";
-import { ThemeProvider } from "theme-ui";
-import theme from "./theme";
+jQuery code to submit the form data to google script url
 
-export default props => (
-  <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
-);
-```
+Whenever you submit the contact form, this jQuery function will do ajax request to the google script url with the form data as payload.
 
-These are the circumstances that suffocate creativity and destroy value in an organization. That’s why I knew that if I was going to start a company, our first product would have to be the company itself. These are the circumstances that suffocate creativity and destroy value in an organization. That’s why I knew that if I was going to start a company, our first product would have to be the company itself. These are the circumstances that suffocate creativity and destroy value in an organization. That’s why I knew that if I was going to start a company, our first product would have to be the company itself. These are the circumstances that suffocate creativity and destroy value in an organization. That’s why I knew that if I was going to start a company, our first product would have to be the company itself.
+Remember that the input field names of the form should be defined in the google sheet’s first row. You can add any number of input field in the form. Just define the field names in the google sheet and the submitted values will be populated in the sheet automatically.
 
----
+I have hosted my contact form using Github Pages. Check it out here [https://maharjanmilan.github.io/contact-form](https://maharjanmilan.github.io/contact-form "https://maharjanmilan.github.io/contact-form").
 
-Hyphens
+Once you submit the form, if the data submission was successful you’ll see a success popup. You can also replace this popup with other beautiful alternatives.
 
----
+![https://maharjanmilan.github.io/contact-form](https://cdn-images-1.medium.com/max/1600/1*D1aG9FOdm0bK-UdVUIEzAw.png)[https://maharjanmilan.github.io/contact-form](https://maharjanmilan.github.io/contact-form "https://maharjanmilan.github.io/contact-form")
 
-Asterisks
+7\. Now you can see the contact details submitted from the form in you google sheet.
 
----
+![](https://cdn-images-1.medium.com/max/1600/1*zRAIkWAkw2Hl6ro74_hSgA.png)
 
-Underscores
+If you need a date column to record the submitted date just add `Timestamp` header right beside `message` This field will auto-populate the submitted date.
 
-These are the circumstances that suffocate creativity and destroy value in an organization. That’s why I knew that if I was going to start a company, our first product would have to be the company itself. These are the circumstances that suffocate creativity and destroy value in an organization. That’s why I knew that if I was going to start a company, our first product would have to be the company itself.
+That’s it. As simple as that.
 
-Do they have the resources necessary to execute on their ideas? Or are they constantly under pressure to pluck only the lowest-hanging fruit through bare minimum means, while putting their greatest ambitions on the back-burner?
+Modify it slightly and you can create a newsletter form or even build a product order form. The possibilities are limitless.
 
-Emphasis, aka italics, with _asterisks_ or _underscores_.
+You can also clone my project [https://github.com/maharjanmilan/contact-form/](https://github.com/maharjanmilan/contact-form/ "https://github.com/maharjanmilan/contact-form/") and see the implementation there.
 
-Strong emphasis, aka bold, with **asterisks** or **underscores**.
+If you want to learn how to deploy your static site to Github Pages see [here](https://pages.github.com/). It is very easy. You can even use your custom domain name for free.
 
-Combined emphasis with **asterisks and _underscores_**.
+There are lot of other free static hosting services like [Netlify](https://www.netlify.com/), [Firebase](https://firebase.google.com/), [Amazon S3](https://aws.amazon.com/s3/), [Zeit](https://zeit.co/), [Forge](https://getforge.com/). Check them out as well.
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+Btw you can also trigger the google sheet to send email with the form data. But that’s for another tutorial :)
 
-1. First ordered list item
-2. Another item
-   ⋅⋅\* Unordered sub-list.
-3. Actual numbers don't matter, just that it's a number
-   ⋅⋅1. Ordered sub-list
-4. And another item.
-
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
-
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
-
-- Unordered list can use asterisks
-
-* Or minuses
-
-- Or pluses
+I hope this was helpful.
