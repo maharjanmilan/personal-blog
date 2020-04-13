@@ -1,6 +1,6 @@
 ---
 hero:
-  heading: Milan Maharjan
+  heading: ''
   maxWidthPX: "652"
 
 ---
