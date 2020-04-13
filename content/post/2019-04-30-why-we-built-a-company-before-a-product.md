@@ -1,19 +1,13 @@
 ---
 title: Build a custom Contact Form for your static website
 date: 2019-04-30
-hero: ''
+hero: "/images/1_sSWNVHPWeBDZni5waZm9rQ.png"
 excerpt: In this tutorial we will learn how to use google sheet as a backend to store
   the data submitted from a contact form
 timeToRead: 3
 authors: []
 
 ---
-***
-
-### Build a custom Contact Form for your static website
-
-![](https://cdn-images-1.medium.com/max/1600/1*sSWNVHPWeBDZni5waZm9rQ.png)
-
 If your website doesn’t change that often and all the features you need can be implemented with a static site, then there is no point building a bulky dynamic site. After all static sites are fast, simple, costs low, easier to scale and more secure.
 
 Being said that, sometimes we need some features that a static sites can’t offer. Getting data from a contact form is one of them. But there’s a very easy way to do that.
