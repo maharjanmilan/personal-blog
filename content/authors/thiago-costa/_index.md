@@ -1,19 +1,8 @@
 ---
-title: Thiago Costa
-bio: |
-  Written by You. This is where your author bio lives. Share your work, your
-  joys and of course, your Twitter handle.
-avatar: /images/thiago-costa.jpg
+title: Milan Maharjan
+bio: "Software Developer based in Kathmandu, Nepal. \n"
+avatar: "/images/thiago-costa.jpg"
 featured: false
-social:
-  - title: github
-    url: https://github.com
-  - title: github
-    url: https://github.com
-  - title: github
-    url: https://github.com
-  - title: github
-    url: https://github.com
-  - title: github
-    url: https://github.com
+social: []
+
 ---
