@@ -7,10 +7,6 @@ timeToRead = 4
 title = "Continuous Deployment (CD) from Bitbucket to Cpanel/FTP Server"
 
 +++
-### 
-
-![](https://cdn-images-1.medium.com/max/1600/1*5JlKsnKXhqWMfmVKSppFzg.jpeg)
-
 There has been a drastic rise of using virtual cloud servers to host apps. And a lot of developers implement CI/CD. It makes the deployment in the cloud easy and fast.
 
 A lot of apps no longer use FTPs or traditional shared hosting anymore. But there are still many of us who host their apps in shared hosting, because the app is simple and the cost is low as well. Today we’ll learn how to automatically deploy our code to shared hosting via FTP whenever something is pushed to bitbucket.
