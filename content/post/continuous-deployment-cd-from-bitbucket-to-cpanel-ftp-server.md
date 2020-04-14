@@ -1,7 +1,6 @@
 +++
 authors = ["Milan Maharjan"]
 date = 2020-03-09T18:15:00Z
-draft = true
 excerpt = "Deploy to ftp server automatically when you push to Bitbucket"
 hero = ""
 timeToRead = 4
