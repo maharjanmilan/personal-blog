@@ -2,7 +2,7 @@
 authors = ["Milan Maharjan"]
 date = 2020-03-09T18:15:00Z
 excerpt = "Deploy to ftp server automatically when you push to Bitbucket"
-hero = ""
+hero = "/images/1_5JlKsnKXhqWMfmVKSppFzg.jpeg"
 timeToRead = 4
 title = "Continuous Deployment (CD) from Bitbucket to Cpanel/FTP Server"
 
