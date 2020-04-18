@@ -14,4 +14,7 @@
 
 .articles-paginator{
     margin-top: 95px;
+    @media screen and (max-width: $phablet){
+        margin-top: 0px;
+    }
 }
