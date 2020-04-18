@@ -27,9 +27,9 @@ Create `bitbucket-pipelines.yml` file in the root of the project.
 
 {{< tweet 1251435612038520837 >}}
 
-{{< instagram B9Rf_TABM2p >}}
+{{< instagram B9dihDHhfZs >}}
 
-{{< instagram B9Rf_TABM2p hidecaption >}}
+{{< instagram B9dihDHhfZs hidecaption >}}
 
 {{< youtube id="rWlX-qDzsyI" autoplay="true" >}}
 
