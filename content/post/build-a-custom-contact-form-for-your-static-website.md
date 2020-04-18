@@ -38,7 +38,7 @@ We’ll first create a url to submit the contact form to. Let’s begin !
 
 4\. This will open a script editor page. Copy the following code and paste it in the script editor. This script will listen for a `POST` request and add the submitted data as a new row in the google sheet.
 
-Google Sheet script
+{{< gist maharjanmilan c4a8316b51716d4408ba31beb6eef5e0 >}}
 
 5\. Save the script. Then click `Run > Run function > setup` It will then ask for permission to access your google sheet. Just allow it. Then click `Publish > Deploy as web app` Set project version as `new`, execute the app as `me` and who has the access to app as `Anyone, even anonymous.` Then click deploy and it will display a web app url. Copy this url, we’ll need this later.
 
