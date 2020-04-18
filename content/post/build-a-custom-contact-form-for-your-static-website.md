@@ -50,7 +50,7 @@ That is all we need to do in google sheet. Now let’s setup our frontend.
 
 6\. In your html form, let’s add few jQuery script to submit a POST request to the url we generated in step 5 above. Add following codes between script tag in your html. Replace the url in below code with your google script url and also replace the form class name.
 
-jQuery code to submit the form data to google script url
+{{< gist maharjanmilan 0d3884b65e76159e7a452c06feb66b55 >}}
 
 Whenever you submit the contact form, this jQuery function will do ajax request to the google script url with the form data as payload.
 
