@@ -21,8 +21,6 @@ We’ll be using
 * Contact form template by [Colorlib](https://colorlib.com/download/160/) (_also free_)
 * [Google App Script](https://developers.google.com/apps-script/guides/sheets) to use [Google Sheet](https://docs.google.com/spreadsheets) as data storage (_also free_)
 
-***
-
 We’ll first create a url to submit the contact form to. Let’s begin !
 
 1\. Open [Google Sheet](https://docs.google.com/spreadsheets) and create a new sheet.
@@ -45,8 +43,6 @@ We’ll first create a url to submit the contact form to. Let’s begin !
 ![](https://cdn-images-1.medium.com/max/1600/1*I5IGS_gfa-zCB9WO4_o0hA.png)
 
 That is all we need to do in google sheet. Now let’s setup our frontend.
-
-***
 
 6\. In your html form, let’s add few jQuery script to submit a POST request to the url we generated in step 5 above. Add following codes between script tag in your html. Replace the url in below code with your google script url and also replace the form class name.
 
