@@ -29,7 +29,7 @@ Create `bitbucket-pipelines.yml` file in the root of the project.
 
 {{< instagram B9Rf_TABM2p >}}
 
-{{< youtube id="rWlX-qDzsyI" autoplay="true" >}}
+{{< youtube id="rWlX-qDzsyI" autoplay="true" class="youtube-class">}}
 
 {{< youtube rWlX-qDzsyI >}}
 
