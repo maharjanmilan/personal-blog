@@ -54,6 +54,10 @@
     @media screen and (max-width: $tablet){
       width: 100%;
     }
+
+    @media screen and (max-width: $phablet){
+      margin: 0px 0;
+    }
 }
 
 .hero-heading{
