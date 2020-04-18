@@ -28,7 +28,7 @@
 }
 
 
-.gist{
+.twitter-tweet, .instagram-media-rendered, .gist{
   margin: 0 auto 35px;
   width: 100%;
   max-width: 680px;
@@ -36,14 +36,14 @@
 
 /*DESKTOP*/
 @media screen and (max-width: 1070px){
-  .gist{
+  .twitter-tweet, .instagram-media-rendered, .gist{
     max-width: 507px;
   }
 }
 
 /*TABLET*/
 @media screen and (max-width: 735px){
-  .gist{
+  .twitter-tweet, .instagram-media-rendered, .gist{
     max-width: 486px;
     margin: 0 auto 25px;
   }
@@ -51,7 +51,7 @@
 
 /*PHABLET*/
 @media screen and (max-width: 540px) {
-  .gist {
+  .twitter-tweet, .instagram-media-rendered, .gist {
     padding: 0 20px;
   }
 }
