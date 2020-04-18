@@ -29,6 +29,14 @@ Create `bitbucket-pipelines.yml` file in the root of the project.
 
 {{< gist maharjanmilan f534c541a0a1f24c82af22089d39473c >}}
 
+{{< tweet 1251435612038520837 >}}
+
+{{< instagram B9Rf_TABM2p >}}
+
+{{< youtube id="rWlX-qDzsyI" autoplay="true" >}}
+
+{{< youtube rWlX-qDzsyI >}}
+
 This is a build configuration for Docker. You can use any docker image from [Docker Hub](https://hub.docker.com/) as your build environment. Here I have used `node:latest` image. Under `branches` I have specified `master`. So this build will happen only when we push to master branch. Under `script` I have mentioned few commands to run inside the container. Then I have used a ftp pipe provided by Bitbucket to deploy the code to ftp server. Under `variables` we define our FTP parameters of Cpanel or any hosting service.
 
 You can see here that I have used pipeline environment variables. This can be defined under repository `Setting > Pipelines > Repository variables`
