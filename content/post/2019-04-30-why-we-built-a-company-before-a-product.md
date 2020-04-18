@@ -1,6 +1,6 @@
 ---
 title: Build a custom Contact Form for your static website
-date: 2019-04-30
+date: 2020-04-11T18:15:00+00:00
 hero: "/images/1_sSWNVHPWeBDZni5waZm9rQ.png"
 excerpt: In this tutorial we will learn how to use google sheet as a backend to store
   the data submitted from a contact form

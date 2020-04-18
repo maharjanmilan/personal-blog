@@ -7,10 +7,6 @@ sections:
 - type: heading
   label: Content
 - type: document
-  path: partials/seo/print.html
-  label: SEO
-  read_only: true
-- type: document
   path: content/_index.md
   label: Home
 - type: directory
