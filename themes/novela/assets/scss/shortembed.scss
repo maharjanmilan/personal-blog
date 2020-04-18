@@ -28,30 +28,42 @@
 }
 
 
-.twitter-tweet, .instagram-media, .gist, .youtube-class{
+.twitter-tweet, .instagram-class, .gist, .youtube-class{
   margin: 0 auto 35px;
   width: 100%;
   max-width: 680px;
 }
+.youtube-class {
+  padding-bottom: 33%;
+}
 
 /*DESKTOP*/
 @media screen and (max-width: 1070px){
-  .twitter-tweet, .instagram-media, .gist, .youtube-class{
+  .twitter-tweet, .instagram-class, .gist, .youtube-class{
     max-width: 507px;
+  }
+  .youtube-class{
+    padding-bottom: 37%;
   }
 }
 
 /*TABLET*/
 @media screen and (max-width: 735px){
-  .twitter-tweet, .instagram-media, .gist, .youtube-class{
+  .twitter-tweet, .instagram-class, .gist, .youtube-class{
     max-width: 486px;
     margin: 0 auto 25px;
+  }
+  .youtube-class{
+    padding-bottom: 42%;
   }
 }
 
 /*PHABLET*/
 @media screen and (max-width: 540px) {
-  .twitter-tweet, .instagram-media, .gist, .youtube-class {
+  .twitter-tweet, .instagram-class, .gist, .youtube-class {
     padding: 0 20px;
+  }
+  .youtube-class{
+    padding-bottom: 56%;
   }
 }
