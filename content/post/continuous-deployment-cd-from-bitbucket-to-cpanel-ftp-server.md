@@ -23,10 +23,6 @@ To import this Github repo to your Bitbucket, go to [https://bitbucket.org/repo/
 
 Create `bitbucket-pipelines.yml` file in the root of the project.
 
->     <html>
->     <title>test</title>
->     </html>
-
 {{< gist maharjanmilan f534c541a0a1f24c82af22089d39473c >}}
 
 {{< tweet 1251435612038520837 >}}
