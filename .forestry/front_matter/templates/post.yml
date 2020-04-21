@@ -31,7 +31,7 @@ fields:
     min: 
     max: 
     step: 
-- name: hero
+- name: hero_bak
   type: file
   config:
     maxSize: 250
@@ -40,6 +40,13 @@ fields:
   type: tag_list
   default: []
   label: Authors
+- name: hero
+  type: text
+  config:
+    required: false
+    min: 10
+  label: Hero Image
+  description: Link of main image
 pages:
 - content/post/add-multiple-timezone-clocks-in-mac-os.md
 - content/post/continuous-deployment-cd-from-bitbucket-to-cpanel-ftp-server.md
