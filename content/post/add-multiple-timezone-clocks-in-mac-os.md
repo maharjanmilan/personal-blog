@@ -8,7 +8,7 @@ timeToRead = 2
 title = "Add multiple timezone clocks in mac os"
 
 +++
-If you are working with people who are at different time zone than yours, you might need to know their local time. Or you might want to call your friend or relative who lives at the other end of the glove and need to know that it is not a sleeping time there. Or you might want to know your local time for your favorite football club's match.
+If you are working with people who are at different time zone than yours, you might want to know their local time. Or you might want to call your friend or relative who lives at the other end of the globe, and need to find out whether its sleeping time there. Or you might want to know your local time for your favorite football club's match.
 
 Whatever your case be, it would be helpful to have multiple clocks in your mac.
 
