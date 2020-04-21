@@ -1,7 +1,6 @@
 +++
 authors = ["Milan Maharjan"]
 date = 2020-04-20T18:15:00Z
-draft = true
 excerpt = "Learn how to setup display clocks for other time zones in mac os."
 hero = "/images/Screen Shot 2020-04-21 at 12.14.30.png"
 timeToRead = 2
