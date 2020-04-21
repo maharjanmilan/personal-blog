@@ -18,7 +18,8 @@ Although you cannot add multiple timezone clock in the menu bar, you can add _Wo
 
 1. Click on the hamburger menu (icon with three lines) on the top right corner of your mac. This will open _Notifications center._
 
-   !\[\](/images/Screen%20Shot%202020-04-21%20at%2012.13.39.png) ![](/images/Screen Shot 2020-04-21 at 12.13.39.png)
+   ![](/images/Screen%20Shot%202020-04-21%20at%2012.13.39.png)
+   ![](/images/Screen Shot 2020-04-21 at 12.13.39.png)
 2. Open _Today_ view and click Edit button at the bottom of this view. After you click edit you'll see the list of items you can add to this view.
 
    ![](/images/Screen Shot 2020-04-21 at 12.14.30.png)
