@@ -17,7 +17,7 @@ Although you cannot add multiple timezone clock in the menu bar, you can add _Wo
 
 1. Click on the hamburger menu (icon with three lines) on the top right corner of your mac. This will open _Notifications center._
 
-![](https://lh3.googleusercontent.com/C15a0OUBWWparqy9UA3fW9Uzz0JzP20zlMrJeTevGqFf6TUGrukmotaXFQAQzYQhiKJJKRy4UnOAw4xSfANDXMD4TLeEtsP_bhYVua6rXjb8Jln7vk3OZ6IG48NX4E9uzQRtkQCmxKs=w800 "C15a0OUBWWparqy9UA3fW9Uzz0JzP20zlMrJeTevGqFf6TUGrukmotaXFQAQzYQhiKJJKRy4UnOAw4xSfANDXMD4TLeEtsP_bhYVua6rXjb8Jln7vk3OZ6IG48NX4E9uzQRtkQCmxKs=w800")
+![](https://lh3.googleusercontent.com/yWr-3xrobk_kP0ox3Hxl8i8QFuxa1D-dhflqjOBQErVIv5A0VB0otgTsifAPW8qfBiJ9sPj0c7CWTPsgXnJyRBa_0T2pMjg2r0cLzHn81255b_LcrT81S-6ca3Ka1ydwvHul6HArYSs=w800)
 2\. Open _Today_ view and click Edit button at the bottom of this view. After you click edit you'll see the list of items you can add to this view.
 
 ![](https://lh3.googleusercontent.com/3G4Q4EoCsG-5yZBHL6H_7PyEWKOdxmNqcyd3gZSfPRdJqq1jZ2OWsarlcMxdImi7auGfA8GfNhPdjWx0hTf_vf8gJY_DHSM84cLLy8R3CJ1zy7OZ3FXI5wyDQaQfGePquuh5s6lT6O0=w800 "3G4Q4EoCsG-5yZBHL6H_7PyEWKOdxmNqcyd3gZSfPRdJqq1jZ2OWsarlcMxdImi7auGfA8GfNhPdjWx0hTf_vf8gJY_DHSM84cLLy8R3CJ1zy7OZ3FXI5wyDQaQfGePquuh5s6lT6O0=w800")
