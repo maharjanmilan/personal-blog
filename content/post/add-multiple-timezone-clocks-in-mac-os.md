@@ -2,7 +2,8 @@
 authors = ["Milan Maharjan"]
 date = 2020-04-20T18:15:00Z
 excerpt = "Learn how to setup display clocks for other time zones in mac os."
-hero = "/images/Screen Shot 2020-04-21 at 12.14.30.png"
+hero = "https://lh3.googleusercontent.com/Zh8k1V3eR6k2sKhGnziPlGgFM-hvcy5Ehav8GN4KMvCkjh-yftt0YsovJulEZpLAs_xDlabIIu0YyR7biw2umrmCNAvunOwZx1LEQt2nPKQD5Bx7xfpwb1FMIjAL0K6Qs5RHGwrtM84=w800 \"Zh8k1V3eR6k2sKhGnziPlGgFM-hvcy5Ehav8GN4KMvCkjh-yftt0YsovJulEZpLAs_xDlabIIu0YyR7biw2umrmCNAvunOwZx1LEQt2nPKQD5Bx7xfpwb1FMIjAL0K6Qs5RHGwrtM84=w800"
+hero_bak = ""
 timeToRead = 2
 title = "Add multiple timezone clocks in mac os"
 
