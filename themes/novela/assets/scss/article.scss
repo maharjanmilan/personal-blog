@@ -142,13 +142,12 @@
     max-width: 944px;
     overflow: hidden;
     margin: 0 auto;
-    -webkit-box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.2),
-      0 18px 36px -18px rgba(0, 0, 0, 0.22);
-            box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.2),
-      0 18px 36px -18px rgba(0, 0, 0, 0.22);
-
+    left:0;
+    right:0;
+    text-align: center;
+ 
     img{
-        width: 100%;
+        max-width: 100%;
     }
 
     /*DESKTOP MEDIUM*/
@@ -449,7 +448,7 @@
 /**************************************ARTICLE BODY**************************************/
 
 .post-content{
-    padding: 160px 0 35px;
+    padding: 100px 0 35px;
 }
 
 .post-content img{
@@ -531,4 +530,13 @@
 
 .footer-spacer{
     margin-bottom: 65px;
+}
+
+@media screen and (max-height: 550px){
+    .article-hero-image{
+        position: relative;
+    }
+    #progressBar{
+        display: none;
+    }
 }
