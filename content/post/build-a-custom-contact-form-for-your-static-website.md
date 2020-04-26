@@ -1,6 +1,6 @@
 ---
 title: Build a custom Contact Form for your static website
-date: 2020-04-11T18:15:00+00:00
+date: 2020-04-11T18:15:00.000+00:00
 hero: "/images/1_sSWNVHPWeBDZni5waZm9rQ.png"
 excerpt: In this tutorial we will learn how to use google sheet as a backend to store
   the data submitted from a contact form
@@ -13,13 +13,13 @@ If your website doesn’t change that often and all the features you need can be
 
 Being said that, sometimes we need some features that a static sites can’t offer. Getting data from a contact form is one of them. But there’s a very easy way to do that.
 
-In this tutorial we will learn how to use google sheet as a backend to store the data submitted from a contact form.
+In this tutorial we will learn how to use google sheet as a backend to store the data submitted from a contact form and also send that information in email.
 
 We’ll be using
 
 * [GitHub Pages](https://pages.github.com) to host my static contact form (_free_)
 * Contact form template by [Colorlib](https://colorlib.com/download/160/) (_also free_)
-* [Google App Script](https://developers.google.com/apps-script/guides/sheets) to use [Google Sheet](https://docs.google.com/spreadsheets) as data storage (_also free_)
+* [Google App Script](https://developers.google.com/apps-script/guides/sheets) to use [Google Sheet](https://docs.google.com/spreadsheets) as data storage and to send email notification (_also free_)
 
 We’ll first create a url to submit the contact form to. Let’s begin !
 
@@ -29,12 +29,11 @@ We’ll first create a url to submit the contact form to. Let’s begin !
 
 ![](https://cdn-images-1.medium.com/max/1600/1*891xJWYtiC2d6-16w7_NHg.png)
 
-
 3\. Click `Tools` in menu bar, then click `Script Editor`
 
 ![](https://cdn-images-1.medium.com/max/1600/1*cJtymE7LU3TaJzVVUb3wqQ.png)
 
-4\. This will open a script editor page. Copy the following code and paste it in the script editor. This script will listen for a `POST` request and add the submitted data as a new row in the google sheet.
+4\. This will open a script editor page. Copy the following code and paste it in the script editor. This script will listen for a `POST` request and add the submitted data as a new row in the google sheet and also send notification email. Don’t forget to replace the email address in the script with yours. It’s in the last line of the script.
 
 {{< gist maharjanmilan c4a8316b51716d4408ba31beb6eef5e0 >}}
 
@@ -58,7 +57,7 @@ Once you submit the form, if the data submission was successful you’ll see a s
 
 ![https://maharjanmilan.github.io/contact-form](https://cdn-images-1.medium.com/max/1600/1*D1aG9FOdm0bK-UdVUIEzAw.png)[https://maharjanmilan.github.io/contact-form](https://maharjanmilan.github.io/contact-form "https://maharjanmilan.github.io/contact-form")
 
-7\. Now you can see the contact details submitted from the form in you google sheet.
+7\. Now you can see the contact details submitted from the form in you google sheet. You'll also receive an email with all the data.
 
 ![](https://cdn-images-1.medium.com/max/1600/1*zRAIkWAkw2Hl6ro74_hSgA.png)
 
@@ -74,6 +73,6 @@ If you want to learn how to deploy your static site to Github Pages see [here](h
 
 There are lot of other free static hosting services like [Netlify](https://www.netlify.com/), [Firebase](https://firebase.google.com/), [Amazon S3](https://aws.amazon.com/s3/), [Zeit](https://zeit.co/), [Forge](https://getforge.com/). Check them out as well.
 
-Btw you can also trigger the google sheet to send email with the form data. But that’s for another tutorial :)
+~~Btw you can also trigger the google sheet to send email with the form data. But that’s for another tutorial :)~~ Since it was not a big change, I have included the email sending in the App script above.
 
 I hope this was helpful.
